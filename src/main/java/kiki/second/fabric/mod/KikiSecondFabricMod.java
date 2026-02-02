@@ -1,5 +1,6 @@
 package kiki.second.fabric.mod;
 
+import kiki.second.fabric.mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -12,6 +13,6 @@ public class KikiSecondFabricMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }
