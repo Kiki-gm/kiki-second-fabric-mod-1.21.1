@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "g": {
+      "item": "minecraft:gold_nugget"
+    },
+    "m": {
+      "item": "kiki_second_fabric_mod:manguito"
+    }
+  },
+  "pattern": [
+    "ggg",
+    "gmg",
+    "ggg"
+  ],
+  "result": {
+    "count": 1,
+    "id": "kiki_second_fabric_mod:golden_manguito"
+  }
+}
