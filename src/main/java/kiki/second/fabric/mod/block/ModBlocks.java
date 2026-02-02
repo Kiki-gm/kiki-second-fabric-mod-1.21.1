@@ -1,16 +1,22 @@
 package kiki.second.fabric.mod.block;
 
 import kiki.second.fabric.mod.KikiSecondFabricMod;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
 
-//    public static final Block
+    public static final Block KEY_BLOCK = registerBlock("key_block",
+            new Block(AbstractBlock.Settings.create()
+                    .hardness(-1f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
     private static Block registerBlock(String name, Block block) {
          registerBlockItem(name, block);
@@ -27,5 +33,9 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         KikiSecondFabricMod.LOGGER.info("Registering Mod Blocks for " + KikiSecondFabricMod.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.KEY_BLOCK);
+        });
     }
 }

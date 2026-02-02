@@ -1,6 +1,7 @@
 package kiki.second.fabric.mod;
 
 import kiki.second.fabric.mod.block.ModBlocks;
+import kiki.second.fabric.mod.item.ModItemGroups;
 import kiki.second.fabric.mod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,8 @@ public class KikiSecondFabricMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 	}
