@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "kiki_second_fabric_mod:item/golden_manguito"
+  }
+}

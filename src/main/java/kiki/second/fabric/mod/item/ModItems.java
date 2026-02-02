@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 public class ModItems {
 
     public static final Item MANGUITO = registerItem("manguito", new Item(new Item.Settings()));
+    public static final Item GOLDEN_MANGUITO = registerItem("golden_manguito", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(KikiSecondFabricMod.MOD_ID, name), item);
@@ -21,6 +22,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(MANGUITO);
+            fabricItemGroupEntries.add(GOLDEN_MANGUITO);
         });
     }
 }
