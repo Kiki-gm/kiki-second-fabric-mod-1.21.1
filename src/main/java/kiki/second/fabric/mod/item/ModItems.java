@@ -20,9 +20,9 @@ public class ModItems {
     public static void registerModItems() {
         KikiSecondFabricMod.LOGGER.info("Registering Mod Items for " + KikiSecondFabricMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(MANGUITO);
-            fabricItemGroupEntries.add(GOLDEN_MANGUITO);
-        });
+//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
+//            fabricItemGroupEntries.add(MANGUITO);
+//            fabricItemGroupEntries.add(GOLDEN_MANGUITO);
+//        });
     }
 }

@@ -34,8 +34,8 @@ public class ModBlocks {
     public static void registerModBlocks() {
         KikiSecondFabricMod.LOGGER.info("Registering Mod Blocks for " + KikiSecondFabricMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.KEY_BLOCK);
-        });
+//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+//            fabricItemGroupEntries.add(ModBlocks.KEY_BLOCK);
+//        });
     }
 }
