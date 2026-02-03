@@ -20,6 +20,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_MANGUITO);
                         entries.add(ModItems.MANGUITO);
                         entries.add(ModBlocks.KEY_BLOCK);
+                        entries.add(ModItems.KEY);
 
                     }).build());
 

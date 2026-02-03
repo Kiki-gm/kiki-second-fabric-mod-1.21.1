@@ -1,6 +1,7 @@
 package kiki.second.fabric.mod.item;
 
 import kiki.second.fabric.mod.KikiSecondFabricMod;
+import kiki.second.fabric.mod.item.custom.KeyItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -10,6 +11,8 @@ public class ModItems {
 
     public static final Item MANGUITO = registerItem("manguito", new Item(new Item.Settings()));
     public static final Item GOLDEN_MANGUITO = registerItem("golden_manguito", new Item(new Item.Settings()));
+
+    public static final Item KEY = registerItem("key", new KeyItem(new Item.Settings().maxDamage(1)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(KikiSecondFabricMod.MOD_ID, name), item);

@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/furnace",
   "textures": {
-    "all": "kiki_second_fabric_mod:block/key_block"
+    "front": "kiki_second_fabric_mod:block/key_block_front",
+    "top": "kiki_second_fabric_mod:block/key_block_top",
+    "side": "kiki_second_fabric_mod:block/key_block_side"
   }
 }

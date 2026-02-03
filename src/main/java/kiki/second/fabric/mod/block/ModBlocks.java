@@ -3,6 +3,7 @@ package kiki.second.fabric.mod.block;
 import kiki.second.fabric.mod.KikiSecondFabricMod;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -14,7 +15,11 @@ public class ModBlocks {
 
     public static final Block KEY_BLOCK = registerBlock("key_block",
             new Block(AbstractBlock.Settings.create()
-                    .hardness(-1f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+                    .hardness(-1f)
+                    .requiresTool()
+                    .sounds(BlockSoundGroup.WOOD)
+                    .pistonBehavior(PistonBehavior.BLOCK)
+            ));
 
     private static Block registerBlock(String name, Block block) {
          registerBlockItem(name, block);
